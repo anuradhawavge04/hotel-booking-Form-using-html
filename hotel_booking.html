@@ -1,20 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    
+
     <title>hotel booking form</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        #box {
+            background-color: #ff99ff;
+            color: #1a000d;
+            border: none;
+            width: 900px;
+            border: solid #1a000d 4px;
+            margin: 0px 0px 175px 175px;
+            padding: 100px 0px 100px 100px;
+            box-sizing: border-box;
+        }
+
+
+        #btn {
+            background-color: #e60073;
+            color: #ffcce6;
+            height: 30px;
+            border: none;
+            border-radius: 3px;
+            box-shadow: 2px 2px 10px 8px #b3ffff;
+        }
+    </style>
 </head>
+
 <body>
-     <i><u><h1><p align="center">HOTEL RESERVATION FORM</p></h1></i></u>
+    <i><u>
+            <h1>
+                <p align="center">HOTEL RESERVATION FORM</p>
+            </h1></i></u>
     <hr>
-    <form>
+
+    <form id="box">
         <b><label>Guest Name :</label></b>
         <input type="text" placeholder="First Name" required>
         <input type="text" placeholder="Last Name" required>
         <br>
         <br>
-        
-        <b><label>Check-in Date :</label></b> 
+
+        <b><label>Check-in Date :</label></b>
         <input type="date" required>
         <b><label>Check-out Date :</label></b>
         <input type="date" required>
@@ -42,8 +74,8 @@
         <input type="checkbox" id="Breakfast">
         <label for="Breakfast">Breakfast</label><br>
         <input type="checkbox" id="Laundry Services">
-        <label for="Laundry Services" >Laundry Services</label><br>
-        <input type="checkbox" id="Spa Package" >
+        <label for="Laundry Services">Laundry Services</label><br>
+        <input type="checkbox" id="Spa Package">
         <label for="Spa Package">Spa Package</label>
         <br><br>
 
@@ -65,8 +97,9 @@
         <input type="number" placeholder="Enter phone number" required>
         <br><br>
 
-        <input type="submit" value="Submit">
-    
-        </form>
+        <button id="btn">submit</button>
+
+    </form>
 </body>
+
 </html>
